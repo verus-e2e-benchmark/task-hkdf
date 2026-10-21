@@ -4,13 +4,13 @@ version = 4
 
 [[package]]
 name = "aes"
-version = "0.9.0-rc.4"
+version = "0.9.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "04097e08a47d9ad181c2e1f4a5fabc9ae06ce8839a333ba9a949bcb0d31fd2a3"
+checksum = "35f0f96ce78e38c3dc6d8948aa8163d06385be74000f3c7a95bf1eef35d3ea32"
 dependencies = [
  "cipher",
  "cpubits",
- "cpufeatures 0.2.17",
+ "cpufeatures",
 ]
 
 [[package]]
@@ -32,15 +32,15 @@ dependencies = [
 
 [[package]]
 name = "belt-block"
-version = "0.1.2"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d9aa1eef3994e2ccd304a78fe3fea4a73e5792007f85f09b79bb82143ca5f82b"
+checksum = "0304188fd8684b910d24cae451c724cd5140a037c407e696247e94bb57b06434"
 
 [[package]]
 name = "belt-hash"
-version = "0.2.0-rc.5"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c56883a45783acff1ccdf0903f38b8688363e633d3c9a199c2063f0cc946832b"
+checksum = "84605d8024cc6794dc339947b933532675297372feef3ce1f45feeaa8da35fb8"
 dependencies = [
  "belt-block",
  "digest",
@@ -54,18 +54,18 @@ checksum = "89af0b093cc13baa4e51e64e65ec2422f7e73aea0e612e5ad3872986671622f1"
 
 [[package]]
 name = "block-buffer"
-version = "0.12.0"
+version = "0.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cdd35008169921d80bc60d3d0ab416eecb028c4cd653352907921d95084790be"
+checksum = "d2f6c7dbe95a6ed67ad9f18e57daf93a2f034c524b99fd2b76d18fdfeb6660aa"
 dependencies = [
  "hybrid-array",
 ]
 
 [[package]]
 name = "cfg-if"
-version = "1.0.4"
+version = "1.0.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9330f8b2ff13f34540b44e946ef35111825727b38d33286ef986142615121801"
+checksum = "4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600"
 
 [[package]]
 name = "cipher"
@@ -79,9 +79,9 @@ dependencies = [
 
 [[package]]
 name = "cmac"
-version = "0.8.0-rc.5"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2f7f5c25253a49afbdd6a256a21a554c509cf0e6400f59d6dd85e0f15b5f15f6"
+checksum = "ac78aa94ce13e432b332a4d1bf2eff167d3a2520188ee05b337180a42fd2e62e"
 dependencies = [
  "cipher",
  "dbl",
@@ -90,24 +90,15 @@ dependencies = [
 
 [[package]]
 name = "cmov"
-version = "0.5.2"
+version = "0.5.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "de0758edba32d61d1fd9f4d69491b47604b91ee2f7e6b33de7e54ca4ebe55dc3"
+checksum = "0c9ea0ac24bc397ab3c98583a3c9ba74fa56b09a4449bbe172b9b1ddb016027a"
 
 [[package]]
 name = "cpubits"
-version = "0.1.0"
+version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5ef0c543070d296ea414df2dd7625d1b24866ce206709d8a4a424f28377f5861"
-
-[[package]]
-name = "cpufeatures"
-version = "0.2.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "59ed5838eebb26a2bb2e58f6d5b5316989ae9d08bab10e0e6d103e656d1b0280"
-dependencies = [
- "libc",
-]
+checksum = "15b85f9c39137c3a891689859392b1bd49812121d0d61c9caf00d46ed5ce06ae"
 
 [[package]]
 name = "cpufeatures"
@@ -120,18 +111,18 @@ dependencies = [
 
 [[package]]
 name = "crypto-common"
-version = "0.2.1"
+version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "77727bb15fa921304124b128af125e7e3b968275d1b108b379190264f4423710"
+checksum = "ce6e4c961d6cd6c9a86db418387425e8bdeaf05b3c8bc1411e6dca4c252f1453"
 dependencies = [
  "hybrid-array",
 ]
 
 [[package]]
 name = "ctutils"
-version = "0.4.0"
+version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1005a6d4446f5120ef475ad3d2af2b30c49c2c9c6904258e3bb30219bebed5e4"
+checksum = "03bb0e1cc970d482d121d9a1744999169b69a07470b3d644a7894e53fcaf4574"
 dependencies = [
  "cmov",
 ]
@@ -147,9 +138,9 @@ dependencies = [
 
 [[package]]
 name = "digest"
-version = "0.11.2"
+version = "0.11.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4850db49bf08e663084f7fb5c87d202ef91a3907271aff24a94eb97ff039153c"
+checksum = "f1dd6dbb5841937940781866fa1281a1ff7bd3bf827091440879f9994983d5c2"
 dependencies = [
  "block-buffer",
  "crypto-common",
@@ -191,18 +182,18 @@ dependencies = [
 
 [[package]]
 name = "hybrid-array"
-version = "0.4.8"
+version = "0.4.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8655f91cd07f2b9d0c24137bd650fe69617773435ee5ec83022377777ce65ef1"
+checksum = "27f864f10dfb56725ce5ce5472bc52252c8f93a4ab86327122cebf62c5f59a17"
 dependencies = [
  "typenum",
 ]
 
 [[package]]
 name = "inout"
-version = "0.2.2"
+version = "0.2.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4250ce6452e92010fdf7268ccc5d14faa80bb12fc741938534c58f16804e03c7"
+checksum = "3b5cf4372d022092674a83b8febf5865f7a573cc0c5baec5e49c879b6a20978f"
 dependencies = [
  "hybrid-array",
 ]
@@ -229,9 +220,9 @@ checksum = "fb9652713a34bd7a2f539adcab233163943bed9c685970db62eb3cb264d625a1"
 
 [[package]]
 name = "libc"
-version = "0.2.183"
+version = "0.2.191"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b5b646652bf6661599e1da8901b3b9522896f01e736bad5f723fe7a3a27f899d"
+checksum = "65cd87c9a6d60536580b316ad985726104730a5151c99845f2490428ef91240a"
 
 [[package]]
 name = "one-step-kdf"
@@ -249,23 +240,23 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "aacc4cc499359472b4abe1bf11d0b12e688af9a805fa5e3016f9a386dc2d0214"
 dependencies = [
  "cfg-if",
- "cpufeatures 0.3.0",
+ "cpufeatures",
  "digest",
 ]
 
 [[package]]
 name = "sha2"
-version = "0.11.0"
+version = "0.11.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "446ba717509524cb3f22f17ecc096f10f4822d76ab5c0b9822c5f9c284e825f4"
+checksum = "47d7069beb7d6ac7b9acd1039986e73443f24234f41074da099d6f994ac9ad19"
 dependencies = [
  "cfg-if",
- "cpufeatures 0.3.0",
+ "cpufeatures",
  "digest",
 ]
 
 [[package]]
 name = "typenum"
-version = "1.19.0"
+version = "1.20.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "562d481066bde0658276a35467c4af00bdc6ee726305698a55b86e61d7ad82bb"
+checksum = "b6f5e870be6c3b371b77fe0ee0bafb859fa4964b4404c27de1d380043c4dda20"
